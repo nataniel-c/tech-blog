@@ -11,20 +11,22 @@
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
-      </h1>
-      <nav>
+    <header class="justify-flex-start align-center p-3 pl-5 bg-dark">
+      <nav class="display-flex justify-space-between">
+        <h5>
+        <a class="mx-3" href="/">Home</a>
+        <a class="mx-3" href="/dashboard">Dashboard</a> 
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <button class="mx-3 no-button" id="logout"><h5>Logout</h5></button>
         {{else}}
-        <a href="/login">login</a>
+        <a class="mx-3" href="/login">Login</a>
         {{/if}}
-      </nav>
+        </h5>
+      </nav>     
+      <div class="display-inline-block card card-rounded bg-info px-3 mt-2 mx-2">
+        <h1>The Tech Blog</h1>
+      </div>
     </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
