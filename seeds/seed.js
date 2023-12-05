@@ -18,6 +18,7 @@ const seedDatabase = async () => {
       ...post,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
+    console.log(post);
   };
 
   for (const comment of commentData) {
@@ -25,8 +26,9 @@ const seedDatabase = async () => {
       ...comment,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
+    ;
   } 
-
+  
   process.exit(0);
 };
 
