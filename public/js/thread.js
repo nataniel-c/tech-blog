@@ -1,8 +1,3 @@
-// function addCommentHandler() {
-//   document.getElementById("comment-box").style.display = "";
-//   console.log('clicked');
-// }
-
 const submitCommentHandler = async (event) => {
   
   event.preventDefault();
@@ -28,10 +23,6 @@ const submitCommentHandler = async (event) => {
       }
     }
   };
-
-// document
-//   .querySelector('.add-comment')
-//   .addEventListener('click', addCommentHandler);
 
 document
   .querySelector('.new-comment-form')
